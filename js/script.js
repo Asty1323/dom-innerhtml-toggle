@@ -1,5 +1,5 @@
 // Husk fra dag 1: skriv "use strict" herunder
-
+"use strict";
 
 // Eksempel: vi henter teksten "word" ved hjælp af dens id-attribut
 const getWordElem = document.getElementById("word");
@@ -17,5 +17,10 @@ getWordElem.addEventListener("click", function() {
     //   - sæt this.innerHTML til "<strong>og så er du i Netto.</strong>"
     // Ellers:
     //   - sæt this.innerHTML til "Det ta'r kun 5 minutter"
-
+if (this.textContent==="Det ta'r kun 5 minutter") {
+    this.innerHTML="<strong>og så er du i Netto.</strong>"
+}
+else {
+    this.innerHTML="Det ta'r kun 5 minutter"
+}
 });
